@@ -9,7 +9,6 @@ $msg = (isset($_REQUEST['msg']) ? $_REQUEST['msg'] : null);
 
 
 
-
 $con = mysql_connect('localhost','root','');
 mysql_select_db('authentication',$con);
 

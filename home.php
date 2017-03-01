@@ -114,7 +114,8 @@ $(document).ready(function(e){
         </tr>
         
       
-        <td>
+        <td><br>Users Online:</br>
+
         <td>
         
       <div id="chatlogs"">LOADING CHATLOGS PLEASE WAIT...</div>
