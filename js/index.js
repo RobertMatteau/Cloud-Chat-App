@@ -1,25 +1,57 @@
+/*
+
+Robert Matteau
+100522340
+March 1, 2017
+
+This file is where used for the functionality of the html code for register, and missingpass.
+
+
+
+*/
+
 $('.form').find('input, textarea').on('keyup blur focus', function(e) {
 
   var $this = $(this),
     label = $this.prev('label');
 
-  if (e.type === 'keyup') {
-    if ($this.val() === '') {
+  if (e.type === 'keyup') 
+  {
+
+    if ($this.val() === '') 
+    {
       label.removeClass('active highlight');
-    } else {
+    } 
+
+    else {
       label.addClass('active highlight');
     }
-  } else if (e.type === 'blur') {
-    if ($this.val() === '') {
+
+  } 
+  else if (e.type === 'blur') 
+  {
+    
+    if ($this.val() === '') 
+    {
       label.removeClass('active highlight');
-    } else {
+    } 
+
+    else 
+    {
       label.removeClass('highlight');
     }
-  } else if (e.type === 'focus') {
 
-    if ($this.val() === '') {
+  } 
+  else if (e.type === 'focus') 
+  {
+
+    if ($this.val() === '') 
+    {
       label.removeClass('highlight');
-    } else if ($this.val() !== '') {
+    } 
+
+    else if ($this.val() !== '') 
+    {
       label.addClass('highlight');
     }
   }
